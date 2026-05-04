@@ -14,5 +14,5 @@
 <li>Created: May 2026</li>
 </ul>
 <br>
-<h2>Remark:</h2>
+<h2>Important remarks</h2>
 <p>This project is still in work and not finished yet!</p>
