@@ -1,1 +1,23 @@
 /* ##### CSS classes for basket ##### */
+
+.basket-sidebar {
+    position: relative;
+}
+
+
+.basket-content {
+    background: rgba(54, 53, 52, 1);
+    text-align: center;
+    color: white;
+
+    border-radius: 30px;
+    
+    position: sticky;
+    top: 10px;
+
+    overflow-y: auto;
+
+    width: 300px;
+    height: 800px;
+    padding: 20px;
+}

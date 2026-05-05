@@ -13,12 +13,16 @@
      <link rel="stylesheet" href="./styles/basket.css">
 </head>
 <body>
+
     <header>
         <section class="header-section">
             <img src="./assets/img/header-logo.png" alt="Logo picture">
             <img src="./assets/img/menu-button.png" alt="Menu button">
         </section>
     </header>
+
+
+    <div class="main-wrapper">
     <main>
         <section>
             <div class="hero-container">
@@ -27,24 +31,105 @@
             </div>
             <div class="restaurant-name">
                 <h1><span>Timo's</span> Restaurant</h1>
-                <p>⭐ 4,3 (300)</p>
+                <p><span class="star-icon">⭐</span> <span>4,3</span> (300)</p>
             </div>
             <div class="restaurant-description">
                 <p>Das Beste aus Burgern, Pizza und Salat – alles an einem Ort.</p>
             </div>
-
         </section>
 
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Getränke</a></li>
+                <li><a href="#">Vorspeisen</a></li>
+                <li><a href="#">Hauptspeisen</a></li>
+                <li><a href="#">Nachspeisen</a></li>
+                <li><a href="#">Beilagen</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="category-image">
+                <img src="./assets/img/category_drinks.jpg" alt="Drinks picture">
+            </div>
+            <div class="category-bar">
+                <div class="category-header">
+                    <h2>Getränke</h2>
+                </div>
+            </div>
 
 
+            <div class="container">
+
+                <article class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="./assets/img/placeholder_menu_articles.png" alt="Menu article picture">
+                    </div>
+
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Test</h3>
+                            <span class="menu-card-price">10,00 €</span>
+                        </div>
+
+                        <p class="menu-card-description">
+                            Beschreibung des Gerichts.
+                        </p>
+
+                        <div>
+                            <button class="add-button">
+                                <span>Hinzufügen</span>
+                                <span>+</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="./assets/img/placeholder_menu_articles.png" alt="Menu article picture">
+                    </div>
+
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Test</h3>
+                            <span class="menu-card-price">10,00 €</span>
+                        </div>
+
+                        <p class="menu-card-description">
+                            Beschreibung des Gerichts.
+                        </p>
+
+                        <div>
+                            <button class="add-button">
+                                <span>Hinzufügen</span>
+                                <span>+</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
     </main>
+    
+
+        <aside class="basket-sidebar">
+            <div class="basket-content">
+                <h3>Warenkorb</h3>
+                <p>Dein Warenkorb ist leer!</p>
+            </div>
+        </aside>
+    </div>
 
 
+
+    
 
 
     <footer>
         <section class="footer-section">
-            <p>(c) 2026 Timo</p>
+            <p>&#169; 2026 Timo's Restaurant</p>
             <p>Imprint</p>
             <p>Cookie Preferences</p>
         </section>
