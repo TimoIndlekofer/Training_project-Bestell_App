@@ -9,17 +9,18 @@
     border-radius: 12px;
     overflow: hidden;
     
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; */
 
     /* max-width: 1440px;
     margin: 0 auto; */
-
 }
 
 
 .menu-card:hover {
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 

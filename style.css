@@ -135,7 +135,7 @@
 /* Main content NEU */
 
 .content-wrapper {
-    display: flex;
+    /* display: flex;
 
     position: relative;
     width: 100%;
@@ -143,29 +143,62 @@
     gap: 20px;
 
     max-width: 1440px;
+    margin: 0 auto; */
+
+    
+    
+    /* Neu */
+
+    display: grid;
+    grid-template-columns: 1fr 300px;
+
+    max-width: 1440px;
     margin: 0 auto;
+
+    gap: 20px;
 }
 
 
 .menu-section {
     flex: 1;
+
+
+
+    /* Neu */
+
+    grid-column: 1;
+    min-width: 0;
+    width: 100%;
 }
 
 
 .category-container {
-    background: rgba(231, 108, 31, 1);
-    margin-bottom: 20px; 
-
-    flex-direction: column;
-    width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    background: rgba(231, 108, 31, 1);
+
+    position: relative;
+    /* left: 50%;
+    right: 50%; */
+
+    width: 100vw;
+    /* margin-left: -50vw; */
+    /* margin-right: -50vw; */
+    margin-bottom: 20px;
+
+
+
+    /* Neu */
+    margin-left: calc((1440px - 100vw) / 2);
+}
+
+
+.category-container h2 {
+    padding: 15px 0;
+    text-align: left;
 }
 
 
@@ -181,6 +214,8 @@
     flex-direction: column;
     gap: 15px;
     margin-bottom: 50px;
+
+    width: 100%;
 }
 
 
@@ -195,9 +230,56 @@
 
 
 
+/* Test: OK! */
+
+
+/* .content-wrapper {
+  display: grid !important;
+
+  grid-template-columns: 1fr 350px !important; 
+  max-width: 1440px !important;
+  margin: 0 auto !important;
+  gap: 30px !important;
+  align-items: start !important;
+}
+
+
+.menu-section {
+  grid-column: 1 !important;
+  min-width: 0 !important; 
+  width: 100% !important;
+}
+
+
+.basket-sidebar {
+  grid-column: 2 !important;
+  width: 350px !important;
+}
+
+
+.all-menu-cards article {
+  width: 100% !important;
+}
+
+
+.category-container h2 {
+    padding: 15px 0;
+    text-align: left;
+} */
+
+
+/* .category-container {
+    margin-left: calc((1440px - 100vw) / 2);
+}
 
 
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+} */
 
 
 
@@ -385,13 +467,6 @@
     height: 128px;
     max-width: 1440px;
 }
-
-
-
-
-
-
-
 
 
 
