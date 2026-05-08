@@ -185,14 +185,44 @@
     right: 50%; */
 
     width: 100vw;
-    /* margin-left: -50vw; */
-    /* margin-right: -50vw; */
+    /* margin-left: -50vw;
+    margin-right: -50vw; */
     margin-bottom: 20px;
-
-
+    
 
     /* Neu */
-    margin-left: calc((1440px - 100vw) / 2);
+    /* margin-left: calc((1440px - 100vw) / 2); */
+
+
+    /* Neu 08.05.2026 */
+    margin-left: 0;
+    flex-shrink: 0;
+    flex-basis: 100vw;
+}
+
+
+@media (min-width: 1440px) {
+    .category-container {
+        margin-left: calc((1440px - 100vw) / 2);
+    }
+}
+
+
+@media (max-width: 1460px) {
+    .header-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .all-menu-cards {
+        padding-left: 20px;
+    }
+
+
+    .content-wrapper {
+        gap: 40px;
+    }
 }
 
 
