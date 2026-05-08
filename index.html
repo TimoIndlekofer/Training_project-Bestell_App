@@ -12,7 +12,7 @@
      <link rel="stylesheet" href="./styles/assets.css">
      <link rel="stylesheet" href="./styles/basket.css">
 </head>
-<body>
+<body onload="init()">
 
     <!-- Header -->
     <header>
@@ -42,27 +42,84 @@
     <!-- Navbar -->
     <nav class="navbar">
         <ul>
-            <li><a href="#">Getränke</a></li>
-            <li><a href="#">Vorspeisen</a></li>
-            <li><a href="#">Hauptspeisen</a></li>
-            <li><a href="#">Nachspeisen</a></li>
-            <li><a href="#">Beilagen</a></li>
+            <li><a href="#category-drinks">Getränke</a></li>
+            <li><a href="#category-appetizers">Vorspeisen</a></li>
+            <li><a href="#category-main-dishes">Hauptspeisen</a></li>
+            <li><a href="#category-desserts">Nachspeisen</a></li>
+            <li><a href="#category-side-dishes">Beilagen</a></li>
         </ul>
     </nav>
 
 
-    <!-- Main content NEU -->
+    <!-- Main content NEU 08.05.2026 -->
     <div class="content-wrapper">
-
+        
         <section class="menu-section">
-            <!-- <div> -->
-                <!-- <div> -->
-                    <div class="category-container">
-                        <img src="./assets/img/category_drinks.jpg" alt="Drinks picture">
-                        <h2>Getränke</h2>
-                    </div>
-                <!-- </div> -->
-            <!-- </div> -->
+
+            <div class="category-container" id="category-drinks">
+                <img src="./assets/img/category_drinks.jpg" alt="Category picture">
+                <h2>Getränke</h2>
+            </div>
+
+            <div class="all-menu-cards" id="menu-drinks"></div>
+
+
+
+            <div class="category-container" id="category-appetizers">
+                <img src="./assets/img/category_appetizers.jpg" alt="Category picture">
+                <h2>Vorspeisen</h2>
+            </div>
+
+            <div class="all-menu-cards" id="menu-appetizers"></div>
+
+
+
+
+            <div class="category-container" id="category-main-dishes">
+                <img src="./assets/img/category_main_dishes.png" alt="Category picture">
+                <h2>Hauptspeisen</h2>
+            </div>
+
+            <div class="all-menu-cards" id="menu-main-dishes"></div>
+
+
+
+            <div class="category-container" id="category-desserts">
+                <img src="./assets/img/category_desserts.jpg" alt="Category picture">
+                <h2>Nachspeisen</h2>
+            </div>
+
+            <div class="all-menu-cards" id="menu-desserts"></div>
+
+
+
+            <div class="category-container" id="category-side-dishes">
+                <img src="./assets/img/category_side_dishes.jpg" alt="Category picture">
+                <h2>Beilagen</h2>
+            </div>
+
+            <div class="all-menu-cards" id="menu-side-dishes"></div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Sicherung 08.05.2026 -->
+        <!-- <section class="menu-section">
+            <div class="category-container">
+                <img src="./assets/img/category_drinks.jpg" alt="Drinks picture">
+                <h2>Getränke</h2>
+            </div>
 
             <div class="all-menu-cards">
                 <article class="menu-card">
@@ -111,15 +168,10 @@
             </div>
 
 
-
-            <!-- <div> -->
-                <!-- <div> -->
-                    <div class="category-container">
-                        <img src="./assets/img/category_drinks.jpg" alt="Drinks picture">
-                        <h2>Getränke</h2>
-                    </div>
-                <!-- </div> -->
-            <!-- </div> -->
+            <div class="category-container">
+                <img src="./assets/img/category_drinks.jpg" alt="Drinks picture">
+                <h2>Getränke</h2>
+            </div>
 
             <div class="all-menu-cards">
                 <article class="menu-card">
@@ -167,10 +219,10 @@
                 </article>
             </div>
 
-        </section>
+        </section> -->
 
 
-        <section>
+        <section class="basket-section">
             <aside class="basket-sidebar">
                 <div class="basket-content">
                     <h3>Warenkorb</h3>

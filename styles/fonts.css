@@ -11,6 +11,15 @@
 
 @font-face {
     font-family: 'Palanquin', sans-serif;
+    src: url('../assets/fonts/Palanquin-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Palanquin Bold', sans-serif;
     src: url('../assets/fonts/Palanquin-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;

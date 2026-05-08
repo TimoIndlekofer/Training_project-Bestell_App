@@ -3,6 +3,7 @@
 let menu = [
     {
         "id": 101,
+        "image": "./assets/img/menu/water.jpg",
         "name": "Mineralwasser",
         "category": "Getränke",
         "price": 2.50,
@@ -10,6 +11,7 @@ let menu = [
     },
     {
         "id": 102,
+        "image": "./assets/img/menu/cola.jpg",
         "name": "Cola / Spezi / Fanta",
         "category": "Getränke",
         "price": 3.20,
@@ -17,6 +19,7 @@ let menu = [
     },
     {
         "id": 103,
+        "image": "./assets/img/menu/lemonade.jpg",
         "name": "Hausgemachte Limonade",
         "category": "Getränke",
         "price": 4.50,
@@ -24,6 +27,7 @@ let menu = [
     },
     {
         "id": 104,
+        "image": "./assets/img/menu/beer.jpg",
         "name": "Bier",
         "category": "Getränke",
         "price": 3.80,
@@ -31,6 +35,7 @@ let menu = [
     },
     {
         "id": 105,
+        "image": "./assets/img/menu/wine.jpg",
         "name": "Wein",
         "category": "Getränke",
         "price": 7.00,
@@ -38,6 +43,7 @@ let menu = [
     },
     {
         "id": 201,
+        "image": "./assets/img/menu/green_salad.jpg",
         "name": "Grüner Salat",
         "category": "Vorspeise",
         "price": 3.50,
@@ -45,6 +51,7 @@ let menu = [
     },
     {
         "id": 202,
+        "image": "./assets/img/menu/mixed_salad.jpg",
         "name": "Gemischter Salat",
         "category": "Vorspeise",
         "price": 5.50,
@@ -52,6 +59,7 @@ let menu = [
     },
     {
         "id": 203,
+        "image": "./assets/img/menu/spring_rolls.jpg",
         "name": "Frühlingsrollen",
         "category": "Vorspeise",
         "price": 4.50,
@@ -59,6 +67,7 @@ let menu = [
     },
     {
         "id": 204,
+        "image": "./assets/img/menu/placeholder_cheese_sticks.png",
         "name": "Käse Sticks",
         "category": "Vorspeise",
         "price": 7.50,
@@ -66,6 +75,7 @@ let menu = [
     },
     {
         "id": 205,
+        "image": "./assets/img/menu/quiches.jpg",
         "name": "Mini-Quiches",
         "category": "Vorspeise",
         "price": 8.50,
@@ -73,6 +83,7 @@ let menu = [
     },
     {
         "id": 301,
+        "image": "./assets/img/menu/hamburger.jpg",
         "name": "Hamburger",
         "category": "Hauptspeise",
         "price": 12.50,
@@ -80,6 +91,7 @@ let menu = [
     },
     {
         "id": 302,
+        "image": "./assets/img/menu/cheeseburger.png",
         "name": "Cheeseburger",
         "category": "Hauptspeise",
         "price": 14.50,
@@ -87,6 +99,7 @@ let menu = [
     },
     {
         "id": 303,
+        "image": "./assets/img/menu/pizza.jpg",
         "name": "Pizza",
         "category": "Hauptspeise",
         "price": 12.00,
@@ -94,6 +107,7 @@ let menu = [
     },
     {
         "id": 304,
+        "image": "./assets/img/menu/pommes_schnitzel.jpg",
         "name": "Schnitzel mit Pommes",
         "category": "Hauptspeise",
         "price": 18.50,
@@ -101,6 +115,7 @@ let menu = [
     },
     {
         "id": 305,
+        "image": "./assets/img/menu/curry.jpg",
         "name": "Vegetarisches Curry",
         "category": "Hauptspeise",
         "price": 12.50,
@@ -108,6 +123,7 @@ let menu = [
     },
     {
         "id": 401,
+        "image": "./assets/img/menu/ice.jpg",
         "name": "Eisbecher",
         "category": "Nachspeise",
         "price": 7.00,
@@ -115,6 +131,7 @@ let menu = [
     },
     {
         "id": 402,
+        "image": "./assets/img/menu/yoghurt.jpg",
         "name": "Joghurtbecher",
         "category": "Nachspeise",
         "price": 5.00,
@@ -122,6 +139,7 @@ let menu = [
     },
     {
         "id": 403,
+        "image": "./assets/img/menu/waffles.jpg",
         "name": "Frische Waffeln",
         "category": "Nachspeise",
         "price": 4.80,
@@ -129,6 +147,7 @@ let menu = [
     },
     {
         "id": 404,
+        "image": "./assets/img/menu/cake.jpg",
         "name": "Kuchen",
         "category": "Nachspeise",
         "price": 5.30,
@@ -136,6 +155,7 @@ let menu = [
     },
     {
         "id": 405,
+        "image": "./assets/img/menu/backed_banana.jpg",
         "name": "Gebackene Banane",
         "category": "Nachspeise",
         "price": 5.50,
@@ -143,6 +163,7 @@ let menu = [
     },
     {
         "id": 501,
+        "image": "./assets/img/menu/pommes.jpg",
         "name": "Portion Pommes",
         "category": "Beilagen",
         "price": 3.80,
@@ -150,6 +171,7 @@ let menu = [
     },
     {
         "id": 502,
+        "image": "./assets/img/menu/placeholder_potatos.png",
         "name": "Kleine Kartoffeln",
         "category": "Beilagen",
         "price": 4.50,
@@ -157,6 +179,7 @@ let menu = [
     },
     {
         "id": 503,
+        "image": "./assets/img/menu/rice.jpg",
         "name": "Portion Reis",
         "category": "Beilagen",
         "price": 3.50,
@@ -164,6 +187,7 @@ let menu = [
     },
     {
         "id": 504,
+        "image": "./assets/img/menu/placeholder_pizza_bread.png",
         "name": "Pizzabrot",
         "category": "Beilagen",
         "price": 5.00,
@@ -171,6 +195,7 @@ let menu = [
     },
     {
         "id": 505,
+        "image": "./assets/img/menu/cucumber-salad.jpg",
         "name": "Gurkensalat",
         "category": "Beilagen",
         "price": 3.80,
