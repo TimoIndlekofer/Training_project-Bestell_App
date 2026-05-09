@@ -229,10 +229,48 @@
 
         <section class="basket-section">
             <aside class="basket-sidebar">
-                <div class="basket-content">
+
+                <div class="basket-header">
                     <h3>Warenkorb</h3>
-                    <p>Dein Warenkorb ist leer!</p>
                 </div>
+
+                <div class="basket-content">
+                    <!-- <p>Dein Warenkorb ist leer!</p> -->
+                    <ul class="basket-list">
+                        <li class="basket-card">
+                            <div class="basket-card-header">
+                                <h3>Name des Gerichts</h3>
+                            </div>
+
+                            <div class="basket-card-data">
+                                <button class="basket-card-quantity-button">-</button>
+                                <p><span class="basket-card-quantity">1</span> x</p>
+                                <button class="basket-card-quantity-button">+</button>
+                                <span class="basket-card-price">10,00 €</span>
+                                <button class="basket-card-trash-button"><img src="./assets/icons/trashcan.png" alt="Trashcan icon"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="basket-card-calculation-container">
+                    <div class="basket-card-calculation-item">
+                        <span>Zwischensumme</span>
+                        <span>40,00 €</span>
+                    </div>
+
+                    <div class="basket-card-calculation-item">
+                        <span>Lieferkosten</span>
+                        <span>4,99 €</span>
+                    </div>
+
+                    <div class="basket-card-calculation-item basket-card-calculation-total">
+                        <span>Total</span>
+                        <span>44,99 €</span>
+                    </div>
+                    <button class="basket-card-order-button">Bestellen (44,99 €)</button>
+                </div>
+                
             </aside>
         </section>
         
