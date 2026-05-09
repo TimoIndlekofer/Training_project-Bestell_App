@@ -23,3 +23,13 @@ function getMenuData(menuData, priceValue) {
                     </div>
                 </article>`
 }
+
+
+function getCategoryData(categoryData) {
+    return `<div class="category-container" id="${categoryData.categoryID}">
+                <img src="${categoryData.image}" alt="Category picture">
+                <h2>${categoryData.name}</h2>
+            </div>
+
+            <div class="all-menu-cards" id="${categoryData.menuID}"></div>`
+}

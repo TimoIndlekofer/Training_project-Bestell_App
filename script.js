@@ -3,11 +3,28 @@
 function init() {
     // renderMenu();
 
+    renderCategories();
+
     renderDrinks();
     renderAppetizers();
     renderMainDishes();
     renderDesserts();
-    renderSideDishes()
+    renderSideDishes();
+}
+
+
+function renderCategories() {
+    const categoryAndMenuContainer = document.getElementById('category-menu-section');
+    categoryAndMenuContainer.innerHTML = "";
+
+    let categoryAndMenu = "";
+
+    for (let index = 0; index < category.length; index++) {
+        const categoryData = category[index];
+
+        categoryAndMenu += getCategoryData(categoryData);
+    }
+    categoryAndMenuContainer.innerHTML = categoryAndMenu;
 }
 
 

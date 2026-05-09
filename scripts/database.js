@@ -1,5 +1,40 @@
 // ##### JavaScript database file #####
 
+
+let category = [
+    {
+        "categoryID": "category-drinks",
+        "image": "./assets/img/category_drinks.jpg",
+        "name": "Getränke",
+        "menuID": "menu-drinks"
+    },
+    {
+        "categoryID": "category-appetizers",
+        "image": "./assets/img/category_appetizers.jpg",
+        "name": "Vorspeisen",
+        "menuID": "menu-appetizers"
+    },
+    {
+        "categoryID": "category-main-dishes",    
+        "image": "./assets/img/category_main_dishes.png",            
+        "name": "Hauptspeisen",
+        "menuID": "menu-main-dishes"
+    },
+    {
+        "categoryID": "category-desserts",
+        "image": "./assets/img/category_desserts.jpg",
+        "name": "Nachspeisen",
+        "menuID": "menu-desserts"
+    },
+    {
+        "categoryID": "category-side-dishes",
+        "image": "./assets/img/category_side_dishes.jpg",
+        "name": "Beilagen",
+        "menuID": "menu-side-dishes"
+    }
+]
+
+
 let menu = [
     {
         "id": 101,
