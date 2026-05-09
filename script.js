@@ -61,7 +61,6 @@ function renderDrinks() {
         if (menuData.category === "Getränke") {
             const priceValue = renderPrice(menuData.price)
             menuContentDrinks += getMenuData(menuData, priceValue);
-            
         }       
     }
     menuContainerDrinks.innerHTML = menuContentDrinks;
