@@ -137,3 +137,80 @@ function renderSideDishes() {
     }
     menuContainerSideDishes.innerHTML = menuContentSideDishes;
 }
+
+
+function addMenuCardToBasket(menuDataID) {
+    // let basketContent = "";
+
+    let articleAvailable = false;
+
+    for (let articleIndex = 0; articleIndex < basket.length; articleIndex++) {
+        if (basket[articleIndex].id == menuDataID) {
+            basket[articleIndex].quantity += 1;
+            articleAvailable = true;
+            console.log("Menge erhöht auf: " + basket[articleIndex].quantity);
+            break;
+        }
+    }
+
+    if (!articleAvailable) {
+        for (let basketIndex = 0; basketIndex < menu.length; basketIndex++) {
+            if (menu[basketIndex].id == menuDataID) {
+                let basketData = {
+                    id: menu[basketIndex].id,
+                    name: menu[basketIndex].name,
+                    quantity: 1,
+                    price: menu[basketIndex].price
+                }
+                basket.push(basketData);
+                break;
+            } 
+        }
+    }
+    renderBasket();
+}
+
+
+function removeMenuCardFromBasket(basketDataID) {
+    for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
+        if (basket[basketIndex].id == basketDataID) {
+            basket.splice(basketIndex, 1);
+            break;
+        }
+    }
+    renderBasket();
+}
+
+
+function increaseQuantityInBasket(basketDataID) {
+    for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
+        if (basket[basketIndex].id == basketDataID) {
+            basket[basketIndex].quantity += 1;
+            break;
+        }
+    }
+    renderBasket();
+}
+
+
+function reduceQuantityInBasket(basketDataID) {
+    for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
+        if (basket[basketIndex].id == basketDataID) {
+            basket[basketIndex].quantity -= 1;
+            break;
+        }
+    }
+    renderBasket();
+}
+
+
+function renderBasket() {
+    let basketContent = "";
+
+    for (let i = 0; i < basket.length; i++) {
+        basketContent += getBasketData(basket[i]);
+        
+    }
+    document.getElementById('basket-article-list').innerHTML = basketContent;
+    console.log(basket)
+}

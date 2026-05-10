@@ -237,3 +237,6 @@ let menu = [
         "description": "Feine Gurkenscheiben in einem klassischen Dill-Essig-Dressing" 
     }
 ]
+
+
+let basket = [];

@@ -15,7 +15,7 @@ function getMenuData(menuData, priceValue) {
                             ${menuData.description}
                         </p>
                         <div class="add-button-container">
-                            <button class="add-button">
+                            <button class="add-button" onclick="addMenuCardToBasket(${menuData.id})">
                                 <span>Hinzufügen</span>
                                 <span>+</span>
                             </button>
@@ -32,4 +32,23 @@ function getCategoryData(categoryData) {
             </div>
 
             <div class="all-menu-cards" id="${categoryData.menuID}"></div>`
+}
+
+
+function getBasketData(basketData) {
+    let articlePrice = basketData.price * basketData.quantity;
+
+    return `<li class="basket-card">
+                            <div class="basket-card-header">
+                                <h3>${basketData.name}</h3>
+                            </div>
+
+                            <div class="basket-card-data">
+                                <button class="basket-card-quantity-button" onclick="reduceQuantityInBasket(${basketData.id})">-</button>
+                                <p><span class="basket-card-quantity">${basketData.quantity}</span> x</p>
+                                <button class="basket-card-quantity-button" onclick="increaseQuantityInBasket(${basketData.id})">+</button>
+                                <span class="basket-card-price" id="article-price">${articlePrice.toFixed(2)} €</span>
+                                <button class="basket-card-trash-button" onclick="removeMenuCardFromBasket(${basketData.id})"><img src="./assets/icons/trashcan.png" alt="Trashcan icon"></button>
+                            </div>
+                        </li>`
 }
