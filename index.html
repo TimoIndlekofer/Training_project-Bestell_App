@@ -285,7 +285,7 @@
                         <span>Total</span>
                         <span id="basket-calculation-total"></span>
                     </div>
-                    <button class="basket-order-button">Bestellen (<span id="basket-calculation-total-button"></span>)</button>
+                    <button class="basket-order-button" onclick="openDialog()">Bestellen (<span id="basket-calculation-total-button"></span>)</button>
                 </div>
                 
             </aside>
@@ -312,9 +312,21 @@
         <section>
             basket
         </section> -->
-
-
     </div>
+
+    
+    <section>
+        <dialog class="basket-ordered-container" id="basket-ordered-dialog-section">
+            <div class="basket-ordered-close-button">
+                <button onclick="closeDialog()">X</button>
+            </div>
+            <div class="basket-ordered-text">
+                <img src="./assets/icons/delivery-ordered.png" alt="Delivery ordered picture">
+                <h3>Bestellung bestätigt!</h3>
+                <p>Dein Essen ist unterwegs!</p>
+            </div>
+        </dialog>
+    </section>
 
 
 

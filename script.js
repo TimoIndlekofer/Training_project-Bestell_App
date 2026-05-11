@@ -1,8 +1,8 @@
 // ##### JavaScript file for scripts #####
 
-function init() {
-    // renderMenu();
+const dialogBox = document.getElementById('basket-ordered-dialog-section');
 
+function init() {
     renderCategories();
 
     renderDrinks();
@@ -28,22 +28,6 @@ function renderCategories() {
     }
     categoryAndMenuContainer.innerHTML = categoryAndMenu;
 }
-
-
-// function renderMenu() {
-//     const menuContainer = document.getElementById('menu-drinks');
-//     menuContainer.innerHTML = "";
-
-//     let menuContent = "";
-
-//     for (let menuIndex = 0; menuIndex < menu.length; menuIndex++) {
-//         const menuData = menu[menuIndex];
-
-//         menuContent += getMenuData(menuData);        
-//     }
-
-//     menuContainer.innerHTML = menuContent;
-// }
 
 
 function renderPrice(value) {
@@ -284,4 +268,16 @@ function calculateTotal() {
     document.getElementById('basket-calculation-total').innerText = totalValue.toFixed(2).replace('.', ',') + " €";
     document.getElementById('basket-calculation-total-button').innerText = totalValue.toFixed(2).replace('.', ',') + " €"
     return totalValue;
+}
+
+
+function openDialog() {
+    basket = [];
+    dialogBox.showModal();
+    renderBasket();
+}
+
+
+function closeDialog() {
+    dialogBox.close();
 }
