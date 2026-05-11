@@ -236,7 +236,14 @@
                 </div>
 
                 <div class="basket-content">
-                    <!-- <p>Dein Warenkorb ist leer!</p> -->
+                    <div class="basket-empty" id="basket-empty-section">
+                        <p>
+                            Dein Warenkorb ist leer. <br>
+                            Such dir ruhig etwas Leckeres aus!
+                        </p>
+                        <img src="./assets/icons/basket.png" alt="Basket picture">
+                    </div>
+
                     <ul class="basket-list" id="basket-article-list">
                         <!-- <li class="basket-card">
                             <div class="basket-card-header">
@@ -254,22 +261,31 @@
                     </ul>
                 </div>
 
-                <div class="basket-card-calculation-container">
-                    <div class="basket-card-calculation-item">
+                <div class="basket-order-switch-button-container" id="basket-order-switch-button-section">
+                    <span>Abholung</span>
+                    <label class="basket-order-switch-button">
+                        <input type="checkbox" id="basket-order-delivery-toggle" onchange="toggleDelivery()">
+                        <span class="switch-button-slider switch-button-round"></span>
+                    </label>
+                    <span>Lieferung</span>
+                </div>
+
+                <div class="basket-calculation-container" id="basket-calculation-section">
+                    <div class="basket-calculation-item" id="basket-calculation-subtotal-section">
                         <span>Zwischensumme</span>
-                        <span>40,00 €</span>
+                        <span id="basket-calculation-subtotal"></span>
                     </div>
 
-                    <div class="basket-card-calculation-item">
+                    <div class="basket-calculation-item" id="basket-calculation-delivery-cost-section">
                         <span>Lieferkosten</span>
-                        <span>4,99 €</span>
+                        <span id="basket-calculation-delivery-cost"></span>
                     </div>
 
-                    <div class="basket-card-calculation-item basket-card-calculation-total">
+                    <div class="basket-calculation-item basket-calculation-total">
                         <span>Total</span>
-                        <span>44,99 €</span>
+                        <span id="basket-calculation-total"></span>
                     </div>
-                    <button class="basket-card-order-button">Bestellen (44,99 €)</button>
+                    <button class="basket-order-button">Bestellen (<span id="basket-calculation-total-button"></span>)</button>
                 </div>
                 
             </aside>

@@ -83,20 +83,20 @@
 
 
 .basket-content::-webkit-scrollbar-track {
-    background-color: rgba(54, 53, 52, 1);
+    background: rgba(54, 53, 52, 1);
     border-radius: 10px;
 }
 
 
 .basket-content::-webkit-scrollbar-thumb {
-    background-color: rgba(231, 195, 173, 1);
+    background: rgba(231, 195, 173, 1);
     border-radius: 10px;
     border: 2px solid rgba(54, 53, 52, 1);
 }
 
 
 .basket-content::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(231, 108, 31, 1);
+    background: rgba(231, 108, 31, 1);
 }
 
 
@@ -104,6 +104,27 @@
     .basket-content {
         margin-right: 20px;
     }
+}
+
+
+.basket-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+
+    color: rgba(253, 234, 220, 1);
+    font-weight: 700;
+
+    gap: 50px;
+
+    margin-top: 50px;
+}
+
+
+.basket-empty img {
+    width: 128px;
+    height: 128px;
 }
 
 
@@ -128,7 +149,7 @@
     border-radius: 20px;
 
     width: 200px;
-    height: 70px;
+    height: 60px;
     padding: 20px;
 }
 
@@ -217,8 +238,70 @@
 }
 
 
-.basket-card-calculation-container {
+.basket-order-switch-button-container {
     display: flex;
+    justify-content: center;
+
+    font-weight: 700;
+
+    margin-top: 20px;
+}
+
+.basket-order-switch-button {
+    position: relative;
+    display: inline-block;
+
+    width: 50px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+
+.basket-order-switch-button input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.switch-button-slider {
+    position: absolute;
+
+    background: #ccc;
+
+    transition: .4s;
+    border-radius: 24px;
+
+    cursor: pointer;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.switch-button-slider::before {
+    position: absolute;
+    content: "";
+
+    background: white;
+    transition: .4s;
+    border-radius: 50%;
+
+    width: 18px;
+    height: 18px;
+    left: 3px;
+    bottom: 3px;
+}
+
+input:checked + .switch-button-slider { background: #ff8000;}
+input:checked + .switch-button-slider:before { transform: translateX(26px); }
+
+
+.basket-calculation-container {
+    /* display: flex; */
+    display: none;
     flex-direction: column;
     align-items: normal;
 
@@ -228,7 +311,7 @@
 }
 
 
-.basket-card-calculation-item {
+.basket-calculation-item {
     display: flex;
     justify-content: space-between;
 
@@ -236,7 +319,7 @@
 }
 
 
-.basket-card-calculation-total {
+.basket-calculation-total {
     border-top: 3px solid white;
 
     margin-top: 10px;
@@ -245,7 +328,7 @@
 }
 
 
-.basket-card-order-button {
+.basket-order-button {
     background: rgba(231, 108, 31, 1);
     color: white;
 

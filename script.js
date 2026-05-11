@@ -10,6 +10,8 @@ function init() {
     renderMainDishes();
     renderDesserts();
     renderSideDishes();
+
+    renderBasket();
 }
 
 
@@ -142,13 +144,14 @@ function renderSideDishes() {
 function addMenuCardToBasket(menuDataID) {
     // let basketContent = "";
 
+    fullBasket();
+
     let articleAvailable = false;
 
     for (let articleIndex = 0; articleIndex < basket.length; articleIndex++) {
         if (basket[articleIndex].id == menuDataID) {
             basket[articleIndex].quantity += 1;
             articleAvailable = true;
-            console.log("Menge erhöht auf: " + basket[articleIndex].quantity);
             break;
         }
     }
@@ -178,6 +181,10 @@ function removeMenuCardFromBasket(basketDataID) {
             break;
         }
     }
+
+    if (basket.length === 0) {
+        emptyBasket();
+    }
     renderBasket();
 }
 
@@ -200,9 +207,8 @@ function reduceQuantityInBasket(basketDataID) {
 
             if (basket[basketIndex].quantity <= 0) {
                 basket.splice(basketIndex, 1);
-                break;
             }
-            
+            break;
         }
     }
     renderBasket();
@@ -210,12 +216,72 @@ function reduceQuantityInBasket(basketDataID) {
 
 
 function renderBasket() {
-    let basketContent = "";
+    if (basket.length === 0) {
+        emptyBasket();
+        return;
+    } else {
+        fullBasket();
+    }
 
+    calculateSubtotal();
+    calculateTotal();
+
+    let basketContent = "";
+    
     for (let i = 0; i < basket.length; i++) {
         basketContent += getBasketData(basket[i]);
-        
     }
-    document.getElementById('basket-article-list').innerHTML = basketContent;
-    console.log(basket)
+    document.getElementById('basket-article-list').innerHTML = basketContent; 
+}
+
+
+function fullBasket() {
+    document.getElementById('basket-empty-section').style = 'display: none';
+    document.getElementById('basket-order-switch-button-section').style = 'display: flex';
+    document.getElementById('basket-calculation-section').style = 'display: flex';
+}
+
+
+function emptyBasket() {
+    document.getElementById('basket-empty-section').style = 'display: flex';
+    document.getElementById('basket-article-list').innerHTML = "";
+    document.getElementById('basket-order-switch-button-section').style = 'display: none';
+    document.getElementById('basket-calculation-section').style = 'display: none';
+}
+
+
+function toggleDelivery() {
+    renderBasket();
+}
+
+
+function calculateSubtotal() {
+    const subtotalContainer = document.getElementById('basket-calculation-subtotal');
+    subtotalContainer.innerHTML = "";
+    
+    let subtotalValue = 0;
+
+    for (let index = 0; index < basket.length; index++) {
+        subtotalValue += basket[index].price * basket[index].quantity;
+    }
+    subtotalContainer.innerHTML = subtotalValue;
+    document.getElementById('basket-calculation-subtotal').innerText = subtotalValue.toFixed(2).replace('.', ',') + " €";
+    return subtotalValue;
+}
+
+
+function calculateTotal() {
+    const totalContainer = document.getElementById('basket-calculation-total');
+    totalContainer.innerHTML = "";
+
+    let subtotalValue = calculateSubtotal();
+    let delivery = document.getElementById('basket-order-delivery-toggle').checked;
+    let deliveryCost = delivery ? 5.00 : 0.00;
+    
+    let totalValue = subtotalValue + deliveryCost;
+    totalContainer.innerHTML = totalValue;
+    document.getElementById('basket-calculation-delivery-cost').innerText = deliveryCost.toFixed(2).replace('.', ',') + " €";
+    document.getElementById('basket-calculation-total').innerText = totalValue.toFixed(2).replace('.', ',') + " €";
+    document.getElementById('basket-calculation-total-button').innerText = totalValue.toFixed(2).replace('.', ',') + " €"
+    return totalValue;
 }
