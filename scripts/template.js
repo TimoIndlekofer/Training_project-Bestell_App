@@ -47,7 +47,7 @@ function getBasketData(basketData) {
                                 <button class="basket-card-quantity-button" onclick="reduceQuantityInBasket(${basketData.id})">-</button>
                                 <p><span class="basket-card-quantity">${basketData.quantity}</span> x</p>
                                 <button class="basket-card-quantity-button" onclick="increaseQuantityInBasket(${basketData.id})">+</button>
-                                <span class="basket-card-price" id="article-price">${articlePrice.toFixed(2)} €</span>
+                                <span class="basket-card-price" id="article-price">${articlePrice.toFixed(2).replace('.', ',') + " €"}</span>
                                 <button class="basket-card-trash-button" onclick="removeMenuCardFromBasket(${basketData.id})"><img src="./assets/icons/trashcan.png" alt="Trashcan icon"></button>
                             </div>
                         </li>`

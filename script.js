@@ -197,7 +197,12 @@ function reduceQuantityInBasket(basketDataID) {
     for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
         if (basket[basketIndex].id == basketDataID) {
             basket[basketIndex].quantity -= 1;
-            break;
+
+            if (basket[basketIndex].quantity <= 0) {
+                basket.splice(basketIndex, 1);
+                break;
+            }
+            
         }
     }
     renderBasket();
