@@ -1,6 +1,7 @@
 // ##### JavaScript file for scripts #####
 
 const dialogBox = document.getElementById('basket-ordered-dialog-section');
+const toggleDeliveryButton = document.getElementById('basket-order-delivery-toggle');
 
 function init() {
     renderCategories();
@@ -273,6 +274,11 @@ function calculateTotal() {
 
 function openDialog() {
     basket = [];
+
+    if (toggleDeliveryButton) {
+        toggleDeliveryButton.checked = false;
+    }
+
     dialogBox.showModal();
     renderBasket();
 }
