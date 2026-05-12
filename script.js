@@ -2,6 +2,7 @@
 
 const dialogBox = document.getElementById('basket-ordered-dialog-section');
 const toggleDeliveryButton = document.getElementById('basket-order-delivery-toggle');
+let timeout;
 
 function init() {
     renderCategories();
@@ -273,6 +274,7 @@ function calculateTotal() {
 
 function openDialog() {
     basket = [];
+    clearTimeout(timeout);
 
     if (toggleDeliveryButton) {
         toggleDeliveryButton.checked = false;
@@ -280,7 +282,7 @@ function openDialog() {
 
     dialogBox.showModal();
 
-    setTimeout(() => {
+    timeout = setTimeout(() => {
         dialogBox.close();
     }, 5000);
 
@@ -289,6 +291,6 @@ function openDialog() {
 
 
 function closeDialog() {
-    dialogBox.style = 'display: none';
+    clearTimeout(timeout);
     dialogBox.close();
 }
