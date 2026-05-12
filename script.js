@@ -128,7 +128,6 @@ function renderSideDishes() {
 
 function addMenuCardToBasket(menuDataID) {
     // let basketContent = "";
-
     fullBasket();
 
     let articleAvailable = false;
@@ -280,10 +279,16 @@ function openDialog() {
     }
 
     dialogBox.showModal();
+
+    setTimeout(() => {
+        dialogBox.close();
+    }, 5000);
+
     renderBasket();
 }
 
 
 function closeDialog() {
+    dialogBox.style = 'display: none';
     dialogBox.close();
 }
