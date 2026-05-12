@@ -102,3 +102,17 @@
 .add-button:hover {
     background-color: rgba(200, 90, 20, 1);
 }
+
+
+
+
+
+
+/* ##### Tablet version (768px - 1280px) ##### */
+
+@media (min-width: 768px) and (max-width: 1280px) {
+
+    .menu-card {
+        flex-wrap: wrap;
+    }
+}
