@@ -229,7 +229,11 @@
 
         <!-- Basket -->
         <section class="basket-section">
-            <aside class="basket-sidebar">
+            <aside class="basket-sidebar" id="mobile-basket">
+                
+                <div class="basket-mobile-close-button-container">
+                    <button id="basket-mobile-close-button" onclick="closeDialog()">X</button>
+                </div>
 
                 <div class="basket-header">
                     <h3>Warenkorb</h3>
@@ -358,7 +362,6 @@
 
 
 
-
     <!-- Main content ALT -->
     <!-- <main class="main-layout container">
         <div>
@@ -447,6 +450,21 @@
             <p>Cookie Preferences</p>
         </section>
     </footer>
+
+
+    <!-- Navbar for mobile version -->
+    <section>
+        <nav class="mobile-navbar-container">
+            <button><img src="./assets/icons/mobile-home.png" alt="Mobile home button icon"></button>
+            <button><img src="./assets/icons/mobile-profile.png" alt="Mobile profile button icon"></button>
+            <button><img src="./assets/icons/mobile-orders.png" alt="Mobile order button icon"></button>
+            <button>
+            <div class="mobile-basket-button-icon-wrapper">
+                <span><img src="./assets/icons/mobile-shopping_cart.png" alt="Mobile shopping cart button icon" id="mobile-open-basket-button"></span>
+                <span class="basket-badge" id="basket-badge-count"></span>
+            </div></button>
+        </nav>
+    </section>
 
 
 

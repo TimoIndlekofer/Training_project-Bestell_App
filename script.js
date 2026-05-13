@@ -2,6 +2,9 @@
 
 const dialogBox = document.getElementById('basket-ordered-dialog-section');
 const toggleDeliveryButton = document.getElementById('basket-order-delivery-toggle');
+const mobileBasket = document.getElementById('mobile-basket');
+const mobileOpenBasketButton = document.getElementById('mobile-open-basket-button');
+const mobileCloseBasketButton = document.getElementById('basket-mobile-close-button');
 let timeout;
 
 function init() {
@@ -14,6 +17,9 @@ function init() {
     renderSideDishes();
 
     renderBasket();
+
+    mobileBasketFunction();
+    updateBasketBadge();
 }
 
 
@@ -156,6 +162,7 @@ function addMenuCardToBasket(menuDataID) {
         }
     }
     renderBasket();
+    updateBasketBadge();
 }
 
 
@@ -171,6 +178,7 @@ function removeMenuCardFromBasket(basketDataID) {
         emptyBasket();
     }
     renderBasket();
+    updateBasketBadge();
 }
 
 
@@ -182,6 +190,7 @@ function increaseQuantityInBasket(basketDataID) {
         }
     }
     renderBasket();
+    updateBasketBadge();
 }
 
 
@@ -197,6 +206,7 @@ function reduceQuantityInBasket(basketDataID) {
         }
     }
     renderBasket();
+    updateBasketBadge();
 }
 
 
@@ -287,10 +297,47 @@ function openDialog() {
     }, 5000);
 
     renderBasket();
+    updateBasketBadge()
 }
 
 
 function closeDialog() {
     clearTimeout(timeout);
     dialogBox.close();
+}
+
+
+function mobileBasketFunction() {
+    if (mobileOpenBasketButton && mobileCloseBasketButton) {
+        mobileOpenBasketButton.addEventListener('click', openMobileBasket);
+        mobileCloseBasketButton.addEventListener('click', closeMobileBasket);
+    }
+}
+
+
+function openMobileBasket() {
+    mobileBasket.classList.add('is-open');
+}
+
+
+function closeMobileBasket() {
+    mobileBasket.classList.remove('is-open');
+}
+
+
+function updateBasketBadge() {
+    const badgeContainer = document.getElementById('basket-badge-count');
+
+    let basketQuantity = 0;
+
+    for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
+        basketQuantity += basket[basketIndex].quantity;
+    }
+
+    if (basketQuantity > 0) {
+        document.getElementById('basket-badge-count').style = 'display: flex';
+        document.getElementById('basket-badge-count').innerText = basketQuantity;
+    } else {
+        document.getElementById('basket-badge-count').style = 'display: none';
+    }
 }
