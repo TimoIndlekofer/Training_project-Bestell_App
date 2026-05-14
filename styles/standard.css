@@ -74,11 +74,44 @@ h3 {
 
 
 
+/* ##### Tablet version (768px - 1280px) ##### */
+
+@media (max-width: 1120px) {
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
 /* ##### Mobile version (375px - 767px) ##### */
 
-@media (min-width: 375px) and (max-width: 767px) {
+@media /*(min-width: 375px) and*/ (max-width: 767px) {
 
     h1 {
         font-size: 38px;
     }
 }
+
+
+
+
+
+/* ##### Mobile very small version (320px - 374px) ##### */
+
+@media /*(min-width: 320px) and*/ (max-width: 374px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+

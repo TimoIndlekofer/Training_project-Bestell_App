@@ -154,7 +154,8 @@
     /* Neu */
 
     display: grid;
-    grid-template-columns: 1fr 300px;
+    /* grid-template-columns: 1fr 300px; */
+    grid-template-columns: 2fr 1fr;
 
     max-width: 1440px;
     margin: 0 auto;
@@ -341,7 +342,7 @@ html, body {
 
 /* ##### Tablet version (768px - 1280px) ##### */
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media /*(min-width: 768px) and*/ (max-width: 1280px) {
 
     .category-container {
         align-items: flex-start;
@@ -354,7 +355,7 @@ html, body {
 
 /* ##### Mobile version (375px - 767px) ##### */
 
-@media (min-width: 375px) and (max-width: 767px) {
+@media /*(min-width: 375px) and*/ (max-width: 767px) {
 
     .header-logo {
         width: 100px;
@@ -427,6 +428,8 @@ html, body {
 
     .category-container {
         flex-basis: auto;
+
+        align-items: center;
     }
 
 
@@ -526,3 +529,15 @@ html, body {
 
 /* ##### Mobile very small version (320px - 374px) ##### */
 
+@media /*(min-width: 320px) and*/ (max-width: 374px) {
+
+    .hero-foreground {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .restaurant-description {
+        font-size: 18px;
+    }
+}
