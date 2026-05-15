@@ -1,31 +1,24 @@
 /* ##### CSS classes for assets ##### */
 
-.menu-card {
-    /* Alte Variante bis 14.05.2026 */
-    /* display: flex; */
+/* ##### Desktop version (1281px or more) ##### */
 
-    /* Neue Variante ab 14.05.2026 */
+.menu-card {
     display: grid;
     grid-template-columns: 220px 1fr;
-    min-height: 160px;
-
 
     background: rgba(253, 234, 220, 1);
+
     color: rgba(54, 53, 52, 1);
 
     border-radius: 12px;
-    overflow: hidden;
     
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s; */
+    overflow: hidden;
 
-    /* max-width: 1440px;
-    margin: 0 auto; */
+    min-height: 160px;
 }
 
 
 .menu-card:hover {
-    /* transform: translateY(-5px); */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -41,10 +34,7 @@
 
     border-radius: 12px;
 
-    /* margin: 10px; */
-    /* Neue Variante ab 14.05.2026 */
     margin: 20px;
-
     width: 200px;
     height: 120px;
 }
@@ -92,10 +82,9 @@
     display: flex;
     justify-content: space-between;
 
-    /* background: #27ae60; */
     background: rgba(231, 108, 31, 1);
+
     font-weight: 500;
-    /* color: white; */
     color: black;
     
     border: none;
@@ -106,6 +95,7 @@
     cursor: pointer;
 
     gap: 5px;
+
     padding: 10px 16px;
 }
 
@@ -118,10 +108,9 @@
 
 
 
+/* ##### Tablet version (max-width: 1280px) ##### */
 
-/* ##### Tablet version (768px - 1280px) ##### */
-
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
 
     .menu-card {
         flex-wrap: wrap;
@@ -133,6 +122,7 @@
 
     .menu-card {
         grid-template-columns: 150px 1fr;
+        
         min-height: 160px;
     }
 
@@ -150,6 +140,7 @@
 
     .menu-card-image img {
         object-fit: cover;
+
         width: 100px;
         height: 100px;
     }
@@ -164,12 +155,11 @@
 
 
 
-/* ##### Mobile version (375px - 767px) ##### */
+/* ##### Mobile version (max-width: 767px) ##### */
 
-@media /*(min-width: 375px) and*/ (max-width: 767px) {
+@media (max-width: 767px) {
 
     .menu-card {
-        /* flex-direction: column; */
         grid-template-columns: 1fr;
 
         font-size: 14px;
@@ -195,7 +185,6 @@
         justify-content: center;
 
         width: 100%;
-
         margin-top: auto;
     }
 }
@@ -204,13 +193,12 @@
 
 
 
-/* ##### Mobile very small version (320px - 374px) ##### */
+/* ##### Mobile very small version (max-width: 374px) ##### */
 
-@media /*(min-width: 320px) and*/ (max-width: 374px) {
+@media (max-width: 374px) {
 
     .menu-card {
         width: 280px;
-        /* height: 260px; */
         height: auto;
         min-height: 200px;
     }

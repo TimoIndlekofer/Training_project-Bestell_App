@@ -1,5 +1,7 @@
 /* ##### Standard CSS classes ##### */
 
+/* ##### Global ##### */
+
 * {
     margin: 0;
     padding: 0;
@@ -25,10 +27,11 @@ body {
 
 
 html, body {
+    overflow-x: clip;
+
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: clip;
 }
 
 
@@ -57,7 +60,6 @@ h1 {
 
 
 h2 {
-    /* color: white; */
     color: black;
     font-size: 40px;
 
@@ -75,7 +77,7 @@ h3 {
 
 
 
-/* ##### Tablet version (768px - 1280px) ##### */
+/* ##### Tablet version (max-width: 1280px) ##### */
 
 @media (max-width: 1120px) {
 
@@ -88,9 +90,9 @@ h3 {
 
 
 
-/* ##### Mobile version (375px - 767px) ##### */
+/* ##### Mobile version (max-width: 767px) ##### */
 
-@media /*(min-width: 375px) and*/ (max-width: 767px) {
+@media (max-width: 767px) {
 
     h1 {
         font-size: 38px;
@@ -101,9 +103,9 @@ h3 {
 
 
 
-/* ##### Mobile very small version (320px - 374px) ##### */
+/* ##### Mobile very small version (max-width: 374px) ##### */
 
-@media /*(min-width: 320px) and*/ (max-width: 374px) {
+@media (max-width: 374px) {
 
     h1 {
         font-size: 32px;
@@ -114,5 +116,3 @@ h3 {
         font-size: 16px;
     }
 }
-
-

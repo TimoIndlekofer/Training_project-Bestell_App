@@ -29,6 +29,7 @@
 
 .hero-background {
     display: block;
+
     width: 100%;
 }
 
@@ -56,6 +57,7 @@
     align-items: center;
 
     gap: 20px;
+
     margin-bottom: 20px;
 }
 
@@ -104,6 +106,7 @@
 
 .navbar {
     background-color: rgba(231, 108, 31, 1);
+
     position: sticky;
     top: 0;
 
@@ -115,6 +118,7 @@
 
 .navbar ul {
     text-align: center;
+    
     list-style-type: none;
 
     margin: 0;
@@ -131,7 +135,6 @@
 
 .navbar a {
     text-decoration: none;
-    /* color: white; */
     color: black;
     font-weight: bold;
 
@@ -154,42 +157,24 @@
 }
 
 
-/* Main content NEU */
+/* Main content */
 
 .content-wrapper {
-    /* display: flex;
-
-    position: relative;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 
     gap: 20px;
-
-    max-width: 1440px;
-    margin: 0 auto; */
-
-    
-    
-    /* Neu */
-
-    display: grid;
-    /* grid-template-columns: 1fr 300px; */
-    grid-template-columns: 2fr 1fr;
 
     max-width: 1440px;
     margin: 0 auto;
-
-    gap: 20px;
 }
 
 
 .menu-section {
     flex: 1;
 
-
-
-    /* Neu */
-
     grid-column: 1;
+
     min-width: 0;
     width: 100%;
 }
@@ -204,23 +189,13 @@
     background: rgba(231, 108, 31, 1);
 
     position: relative;
-    /* left: 50%;
-    right: 50%; */
 
-    width: 100vw;
-    /* margin-left: -50vw;
-    margin-right: -50vw; */
-    margin-bottom: 20px;
-    
-
-    /* Neu */
-    /* margin-left: calc((1440px - 100vw) / 2); */
-
-
-    /* Neu 08.05.2026 */
-    margin-left: 0;
     flex-shrink: 0;
     flex-basis: 100vw;
+
+    width: 100vw;
+    margin-bottom: 20px;
+    margin-left: 0;
 }
 
 
@@ -250,13 +225,15 @@
 
 
 .category-container h2 {
-    padding: 15px 0;
     text-align: left;
+
+    padding: 15px 0;
 }
 
 
 .category-container img {
     object-fit: cover;
+
     width: 100%;
     height: 200px;
 }
@@ -265,9 +242,10 @@
 .all-menu-cards {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-bottom: 50px;
 
+    gap: 15px;
+
+    margin-bottom: 50px;
     width: 100%;
 }
 
@@ -279,58 +257,6 @@
 }
 
 
-/* Test: OK! */
-
-
-/* .content-wrapper {
-  display: grid !important;
-
-  grid-template-columns: 1fr 350px !important; 
-  max-width: 1440px !important;
-  margin: 0 auto !important;
-  gap: 30px !important;
-  align-items: start !important;
-}
-
-
-.menu-section {
-  grid-column: 1 !important;
-  min-width: 0 !important; 
-  width: 100% !important;
-}
-
-
-.basket-sidebar {
-  grid-column: 2 !important;
-  width: 350px !important;
-}
-
-
-.all-menu-cards article {
-  width: 100% !important;
-}
-
-
-.category-container h2 {
-    padding: 15px 0;
-    text-align: left;
-} */
-
-
-/* .category-container {
-    margin-left: calc((1440px - 100vw) / 2);
-}
-
-
-
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-} */
-
-
 /* Footer */
 
 .footer-section {
@@ -338,7 +264,6 @@ html, body {
     justify-content: center;
     align-items: center;
 
-    /* color: white; */
     color: black;
 
     gap: 50px;
@@ -382,9 +307,9 @@ html, body {
 
 
 
-/* ##### Tablet version (768px - 1280px) ##### */
+/* ##### Tablet version (max-width: 1280px) ##### */
 
-@media /*(min-width: 768px) and*/ (max-width: 1280px) {
+@media (max-width: 1280px) {
 
     .category-container {
         align-items: flex-start;
@@ -395,14 +320,15 @@ html, body {
 
 
 
-/* ##### Mobile version (375px - 767px) ##### */
+/* ##### Mobile version (max-width: 767px) ##### */
 
-@media /*(min-width: 375px) and*/ (max-width: 767px) {
+@media (max-width: 767px) {
 
     .header-logo {
         width: 100px;
         height: auto;
     }
+
 
     .header-menu-button {
         display: none;
@@ -450,7 +376,6 @@ html, body {
 
 
     .content-wrapper {
-        /* display: flex; */
         display: block;
         flex-direction: column;
 
@@ -523,6 +448,7 @@ html, body {
 
     .mobile-basket-button-icon-wrapper {
         display: inline-block;
+
         position: relative;
     }
 
@@ -533,8 +459,8 @@ html, body {
         align-items: center;
 
         background: rgba(253, 234, 220, 1);
-        color: rgba(231, 108, 31, 1);
 
+        color: rgba(231, 108, 31, 1);
         font-size: 14px;
         font-weight: bold;
         font-family: sans-serif;
@@ -568,9 +494,9 @@ html, body {
 
 
 
-/* ##### Mobile very small version (320px - 374px) ##### */
+/* ##### Mobile very small version (max-width: 374px) ##### */
 
-@media /*(min-width: 320px) and*/ (max-width: 374px) {
+@media (max-width: 374px) {
 
     .hero-foreground {
         width: 100px;

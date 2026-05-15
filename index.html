@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestell App</title>
 
+    <!-- Favicon -->
     <link rel="icon" href="./assets/img/restaurant-name-Logo.png" type="image/png">
 
     <!-- CSS files -->
@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="./styles/assets.css">
     <link rel="stylesheet" href="./styles/basket.css">
 </head>
-
 <body onload="init()">
-
     <!-- Header -->
     <header id="top">
         <section class="header-section">
@@ -56,220 +54,32 @@
         </nav>
 
 
-        <!-- Main content NEU 08.05.2026 -->
+        <!-- Main content -->
         <div class="content-wrapper">
-
-            <section class="menu-section" id="category-menu-section">
-
-
-
-
-
-
-                <!-- <div class="category-container" id="category-drinks">
-                <img src="./assets/img/category_drinks.jpg" alt="Category picture">
-                <h2>Getränke</h2>
-            </div>
-
-            <div class="all-menu-cards" id="menu-drinks"></div>
-
-
-
-            <div class="category-container" id="category-appetizers">
-                <img src="./assets/img/category_appetizers.jpg" alt="Category picture">
-                <h2>Vorspeisen</h2>
-            </div>
-
-            <div class="all-menu-cards" id="menu-appetizers"></div>
-
-
-
-
-            <div class="category-container" id="category-main-dishes">
-                <img src="./assets/img/category_main_dishes.png" alt="Category picture">
-                <h2>Hauptspeisen</h2>
-            </div>
-
-            <div class="all-menu-cards" id="menu-main-dishes"></div>
-
-
-
-            <div class="category-container" id="category-desserts">
-                <img src="./assets/img/category_desserts.jpg" alt="Category picture">
-                <h2>Nachspeisen</h2>
-            </div>
-
-            <div class="all-menu-cards" id="menu-desserts"></div>
-
-
-
-            <div class="category-container" id="category-side-dishes">
-                <img src="./assets/img/category_side_dishes.jpg" alt="Category picture">
-                <h2>Beilagen</h2>
-            </div>
-
-            <div class="all-menu-cards" id="menu-side-dishes"></div> -->
-
-            </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- Sicherung 08.05.2026 -->
-            <!-- <section class="menu-section">
-            <div class="category-container">
-                <img src="./assets/img/category_drinks.jpg" alt="Drinks picture">
-                <h2>Getränke</h2>
-            </div>
-
-            <div class="all-menu-cards">
-                <article class="menu-card">
-
-                    <div class="menu-card-image">
-                        <img src="./assets/img/placeholder_menu_articles.png" alt="Menu article picture">
-                    </div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Test</h3>
-                            <span class="menu-card-price">10,00 €</span>
-                        </div>
-                        <p class="menu-card-description">
-                            Beschreibung des Gerichts.
-                        </p>
-                        <div class="add-button-container">
-                            <button class="add-button">
-                                <span>Hinzufügen</span>
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="menu-card">
-
-                    <div class="menu-card-image">
-                        <img src="./assets/img/placeholder_menu_articles.png" alt="Menu article picture">
-                    </div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Test</h3>
-                            <span class="menu-card-price">10,00 €</span>
-                        </div>
-                        <p class="menu-card-description">
-                            Beschreibung des Gerichts.
-                        </p>
-                        <div>
-                            <button class="add-button">
-                                <span>Hinzufügen</span>
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-
-            <div class="category-container">
-                <img src="./assets/img/category_drinks.jpg" alt="Drinks picture">
-                <h2>Getränke</h2>
-            </div>
-
-            <div class="all-menu-cards">
-                <article class="menu-card">
-
-                    <div class="menu-card-image">
-                        <img src="./assets/img/placeholder_menu_articles.png" alt="Menu article picture">
-                    </div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Test</h3>
-                            <span class="menu-card-price">10,00 €</span>
-                        </div>
-                        <p class="menu-card-description">
-                            Beschreibung des Gerichts.
-                        </p>
-                        <div>
-                            <button class="add-button">
-                                <span>Hinzufügen</span>
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="menu-card">
-
-                    <div class="menu-card-image">
-                        <img src="./assets/img/placeholder_menu_articles.png" alt="Menu article picture">
-                    </div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Test</h3>
-                            <span class="menu-card-price">10,00 €</span>
-                        </div>
-                        <p class="menu-card-description">
-                            Beschreibung des Gerichts.
-                        </p>
-                        <div>
-                            <button class="add-button">
-                                <span>Hinzufügen</span>
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-        </section> -->
-
+            <!-- Menu and category bar -->
+            <section class="menu-section" id="category-menu-section"></section>
 
             <!-- Basket -->
             <section class="basket-section">
                 <aside class="basket-sidebar" id="mobile-basket" aria-label="Basket">
-
                     <div class="basket-mobile-close-button-container">
                         <button id="basket-mobile-close-button" onclick="closeDialog()">X</button>
                     </div>
-
                     <div class="basket-header">
                         <h3>Warenkorb</h3>
                     </div>
-
                     <div class="basket-content">
                         <div class="basket-empty" id="basket-empty-section">
                             <p>
-                                Dein Warenkorb ist leer. <br>
+                                Dein Warenkorb ist leer.<br>
                                 Such dir ruhig etwas Leckeres aus!
                             </p>
                             <img src="./assets/icons/basket.png" alt="Basket picture">
                         </div>
-
-                        <ul class="basket-list" id="basket-article-list">
-                            <!-- <li class="basket-card">
-                            <div class="basket-card-header">
-                                <h3>Name des Gerichts</h3>
-                            </div>
-
-                            <div class="basket-card-data">
-                                <button class="basket-card-quantity-button">-</button>
-                                <p><span class="basket-card-quantity">1</span> x</p>
-                                <button class="basket-card-quantity-button">+</button>
-                                <span class="basket-card-price">10,00 €</span>
-                                <button class="basket-card-trash-button"><img src="./assets/icons/trashcan.png" alt="Trashcan icon"></button>
-                            </div>
-                        </li> -->
-                        </ul>
+                        <ul class="basket-list" id="basket-article-list"></ul>
                     </div>
 
+                    <!-- Switch button for pickup or delivery -->
                     <div class="basket-order-switch-button-container" id="basket-order-switch-button-section">
                         <span>Abholung</span>
                         <label class="basket-order-switch-button" for="basket-order-delivery-toggle" aria-label="Switch shipping method between pickup and delivery">
@@ -279,49 +89,24 @@
                         <span>Lieferung</span>
                     </div>
 
+                    <!-- Basket calculation -->
                     <div class="basket-calculation-container" id="basket-calculation-section">
                         <div class="basket-calculation-item" id="basket-calculation-subtotal-section">
                             <span>Zwischensumme</span>
                             <span id="basket-calculation-subtotal"></span>
                         </div>
-
                         <div class="basket-calculation-item" id="basket-calculation-delivery-cost-section">
                             <span>Lieferkosten</span>
                             <span id="basket-calculation-delivery-cost"></span>
                         </div>
-
                         <div class="basket-calculation-item basket-calculation-total">
                             <span>Total</span>
                             <span id="basket-calculation-total"></span>
                         </div>
-                        <button class="basket-order-button" onclick="openDialog()">Bestellen (<span
-                                id="basket-calculation-total-button"></span>)</button>
+                        <button class="basket-order-button" onclick="openDialog()">Bestellen (<span id="basket-calculation-total-button"></span>)</button>
                     </div>
-
                 </aside>
             </section>
-
-
-
-            <!-- Vorlage -->
-            <!-- <section class="category-container-NEU">
-
-            <div class="orange-bg"></div>
-            <div>main</div>
-
-            <div class="orange-bg"></div>
-            <div>main</div>
-
-            <div class="orange-bg"></div>
-            <div>main</div>
-
-        </section>
-
-
-
-        <section>
-            basket
-        </section> -->
         </div>
 
 
@@ -339,115 +124,9 @@
                 <p class="basket-ordered-close-info">(Dieses Fenster schließt automatisch in 5 Sekunden)</p>
             </dialog>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Main content ALT -->
-        <!-- <main class="main-layout container">
-        <div>
-            <section>
-                <div class="category-bar-fullsize">
-                    <div class="category-title">
-                        <img src="./assets/img/category_drinks.jpg" alt="Drinks picture">
-                        <h2>Getränke</h2>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div>
-                        <article class="menu-card">
-                            <div class="menu-card-image">
-                                <img src="./assets/img/placeholder_menu_articles.png" alt="Menu article picture">
-                            </div>
-                            <div class="menu-card-content">
-                                <div class="menu-card-header">
-                                    <h3>Test</h3>
-                                    <span class="menu-card-price">10,00 €</span>
-                                </div>
-                                <p class="menu-card-description">
-                                    Beschreibung des Gerichts.
-                                </p>
-                                <div>
-                                    <button class="add-button">
-                                        <span>Hinzufügen</span>
-                                        <span>+</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <div class="menu-card-image">
-                                <img src="./assets/img/placeholder_menu_articles.png" alt="Menu article picture">
-                            </div>
-                            <div class="menu-card-content">
-                                <div class="menu-card-header">
-                                    <h3>Test</h3>
-                                    <span class="menu-card-price">10,00 €</span>
-                                </div>
-                                <p class="menu-card-description">
-                                    Beschreibung des Gerichts.
-                                </p>
-                                <div>
-                                    <button class="add-button">
-                                        <span>Hinzufügen</span>
-                                        <span>+</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <aside class="basket-sidebar">
-            <div class="basket-content">
-                <h3>Warenkorb</h3>
-                <p>Dein Warenkorb ist leer!</p>
-            </div>
-        </aside>
-    </main> -->
-
-
     </main>
+
+
     <!-- Footer -->
     <footer>
         <section class="footer-section">
@@ -476,183 +155,9 @@
     </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Alter Code vom 04.05.2026 / 05.05.2026 -->
-    <!-- <div class="main-wrapper">
-    <main>
-        <section>
-            <div class="hero-container">
-                <img src="./assets/img/restaurant-picture.png" alt="Restaurant picture" class="hero-background">
-                <img src="./assets/img/restaurant-name-Logo.png" alt="Restaurant logo" class="hero-foreground">
-            </div>
-            <div class="restaurant-name">
-                <h1><span>Timo's</span> Restaurant</h1>
-                <p><span class="star-icon">⭐</span> <span>4,3</span> (300)</p>
-            </div>
-            <div class="restaurant-description">
-                <p>Das Beste aus Burgern, Pizza und Salat – alles an einem Ort.</p>
-            </div>
-        </section>
-
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Getränke</a></li>
-                <li><a href="#">Vorspeisen</a></li>
-                <li><a href="#">Hauptspeisen</a></li>
-                <li><a href="#">Nachspeisen</a></li>
-                <li><a href="#">Beilagen</a></li>
-            </ul>
-        </nav>
-
-        <section>
-            <div class="category-image">
-                <img src="./assets/img/category_drinks.jpg" alt="Drinks picture">
-            </div>
-            <div class="category-bar">
-                <div class="category-header">
-                    <h2>Getränke</h2>
-                </div>
-            </div>
-
-
-            <div class="container">
-
-                <article class="menu-card">
-                    <div class="menu-card-image">
-                        <img src="./assets/img/placeholder_menu_articles.png" alt="Menu article picture">
-                    </div>
-
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Test</h3>
-                            <span class="menu-card-price">10,00 €</span>
-                        </div>
-
-                        <p class="menu-card-description">
-                            Beschreibung des Gerichts.
-                        </p>
-
-                        <div>
-                            <button class="add-button">
-                                <span>Hinzufügen</span>
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="menu-card">
-                    <div class="menu-card-image">
-                        <img src="./assets/img/placeholder_menu_articles.png" alt="Menu article picture">
-                    </div>
-
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Test</h3>
-                            <span class="menu-card-price">10,00 €</span>
-                        </div>
-
-                        <p class="menu-card-description">
-                            Beschreibung des Gerichts.
-                        </p>
-
-                        <div>
-                            <button class="add-button">
-                                <span>Hinzufügen</span>
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-    </main>
-    
-
-        <aside class="basket-sidebar">
-            <div class="basket-content">
-                <h3>Warenkorb</h3>
-                <p>Dein Warenkorb ist leer!</p>
-            </div>
-        </aside>
-    </div>
-
-
-    <footer>
-        <section class="footer-section">
-            <p>&#169; 2026 Timo's Restaurant</p>
-            <p>Imprint</p>
-            <p>Cookie Preferences</p>
-        </section>
-    </footer> -->
-
-
-
     <!-- JavaScript files -->
     <script src="./scripts/database.js"></script>
     <script src="./scripts/template.js"></script>
     <script src="./script.js"></script>
 </body>
-
 </html>

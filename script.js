@@ -138,7 +138,6 @@ function renderSideDishes() {
 
 
 function addMenuCardToBasket(menuDataID) {
-    // let basketContent = "";
     fullBasket();
 
     let articleAvailable = false;
@@ -297,12 +296,6 @@ function openDialog() {
     clearTimeout(timeout);
     localStorage.removeItem('basket');
 
-    // if (toggleDeliveryButton) {
-    //     // toggleDeliveryButton.checked = false;
-    //     toggleDeliveryButton.checked = saveDeliverySetting;
-    //     localStorage.setItem('delivery', 'false');
-    // }
-
     toggleDeliveryButtonCheck();
     localStorage.setItem('delivery', 'false')
     toggleDeliveryButton.checked = false;
@@ -328,7 +321,6 @@ function closeDialog() {
 function toggleDeliveryButtonCheck() {
     if (toggleDeliveryButton) {
         toggleDeliveryButton.checked = saveDeliverySetting;
-        // localStorage.setItem('delivery', 'false');
     }
 }
 
