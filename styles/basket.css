@@ -254,6 +254,13 @@
     margin-top: 20px;
 }
 
+
+.basket-order-switch-button-container label:has(input:focus-visible) {
+    outline: 2px solid rgba(231, 108, 31, 1);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
 .basket-order-switch-button {
     position: relative;
     display: inline-block;
@@ -337,7 +344,7 @@ input:checked + .switch-button-slider:before { transform: translateX(26px); }
 
 .basket-order-button {
     background: rgba(231, 108, 31, 1);
-    color: white;
+    color: black;
 
     font-size: 22px;
     font-weight: 700;

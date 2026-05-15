@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestell App</title>
 
+    <link rel="icon" href="./assets/img/restaurant-name-Logo.png" type="image/png">
+
     <!-- CSS files -->
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="./styles/standard.css">
-     <link rel="stylesheet" href="./styles/fonts.css">
-     <link rel="stylesheet" href="./styles/assets.css">
-     <link rel="stylesheet" href="./styles/basket.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/basket.css">
 </head>
+
 <body onload="init()">
 
     <!-- Header -->
-    <header>
+    <header id="top">
         <section class="header-section">
-            <img src="./assets/img/header-logo.png" alt="Logo picture" class="header-logo">
-            <img src="./assets/img/menu-button.png" alt="Menu button" class="header-menu-button">
+            <a href="./index.html"><img src="./assets/img/header-logo.png" alt="Logo picture" class="header-logo"></a>
+            <a href="#" aria-label="Open menu"><img src="./assets/img/menu-button.png" alt="Menu button" class="header-menu-button"></a>
         </section>
     </header>
 
 
     <!-- Hero -->
-    <section>
-        <div class="hero-container">
-            <img src="./assets/img/restaurant-picture.png" alt="Restaurant picture" class="hero-background">
-            <img src="./assets/img/restaurant-name-Logo.png" alt="Restaurant logo" class="hero-foreground">
-        </div>
-        <div class="restaurant-name">
-            <h1><span>Timo's</span> Restaurant</h1>
-            <p><span class="star-icon">⭐</span> <span>4,3</span> (300)</p>
-        </div>
-        <div class="restaurant-description">
-            <p>Das Beste aus Burgern, Pizza und Salat – alles an einem Ort.</p>
-        </div>
-    </section>
+    <main>
+        <section>
+            <div class="hero-container">
+                <img src="./assets/img/restaurant-picture.png" alt="Restaurant picture" class="hero-background">
+                <img src="./assets/img/restaurant-name-Logo.png" alt="Restaurant logo" class="hero-foreground">
+            </div>
+            <div class="restaurant-name">
+                <h1><span>Timo's</span> Restaurant</h1>
+                <p><span class="star-icon">⭐</span> <span>4,3</span> (300)</p>
+            </div>
+            <div class="restaurant-description">
+                <p>Das Beste aus Burgern, Pizza und Salat – alles an einem Ort.</p>
+            </div>
+        </section>
 
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#category-drinks">Getränke</a></li>
-            <li><a href="#category-appetizers">Vorspeisen</a></li>
-            <li><a href="#category-main-dishes">Hauptspeisen</a></li>
-            <li><a href="#category-desserts">Nachspeisen</a></li>
-            <li><a href="#category-side-dishes">Beilagen</a></li>
-        </ul>
-    </nav>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#category-drinks">Getränke</a></li>
+                <li><a href="#category-appetizers">Vorspeisen</a></li>
+                <li><a href="#category-main-dishes">Hauptspeisen</a></li>
+                <li><a href="#category-desserts">Nachspeisen</a></li>
+                <li><a href="#category-side-dishes">Beilagen</a></li>
+            </ul>
+        </nav>
 
 
-    <!-- Main content NEU 08.05.2026 -->
-    <div class="content-wrapper">
-        
-        <section class="menu-section" id="category-menu-section">
+        <!-- Main content NEU 08.05.2026 -->
+        <div class="content-wrapper">
 
-
-
+            <section class="menu-section" id="category-menu-section">
 
 
 
-            <!-- <div class="category-container" id="category-drinks">
+
+
+
+                <!-- <div class="category-container" id="category-drinks">
                 <img src="./assets/img/category_drinks.jpg" alt="Category picture">
                 <h2>Getränke</h2>
             </div>
@@ -105,7 +110,7 @@
 
             <div class="all-menu-cards" id="menu-side-dishes"></div> -->
 
-        </section>
+            </section>
 
 
 
@@ -119,8 +124,8 @@
 
 
 
-        <!-- Sicherung 08.05.2026 -->
-        <!-- <section class="menu-section">
+            <!-- Sicherung 08.05.2026 -->
+            <!-- <section class="menu-section">
             <div class="category-container">
                 <img src="./assets/img/category_drinks.jpg" alt="Drinks picture">
                 <h2>Getränke</h2>
@@ -227,29 +232,29 @@
         </section> -->
 
 
-        <!-- Basket -->
-        <section class="basket-section">
-            <aside class="basket-sidebar" id="mobile-basket">
-                
-                <div class="basket-mobile-close-button-container">
-                    <button id="basket-mobile-close-button" onclick="closeDialog()">X</button>
-                </div>
+            <!-- Basket -->
+            <section class="basket-section">
+                <aside class="basket-sidebar" id="mobile-basket" aria-label="Basket">
 
-                <div class="basket-header">
-                    <h3>Warenkorb</h3>
-                </div>
-
-                <div class="basket-content">
-                    <div class="basket-empty" id="basket-empty-section">
-                        <p>
-                            Dein Warenkorb ist leer. <br>
-                            Such dir ruhig etwas Leckeres aus!
-                        </p>
-                        <img src="./assets/icons/basket.png" alt="Basket picture">
+                    <div class="basket-mobile-close-button-container">
+                        <button id="basket-mobile-close-button" onclick="closeDialog()">X</button>
                     </div>
 
-                    <ul class="basket-list" id="basket-article-list">
-                        <!-- <li class="basket-card">
+                    <div class="basket-header">
+                        <h3>Warenkorb</h3>
+                    </div>
+
+                    <div class="basket-content">
+                        <div class="basket-empty" id="basket-empty-section">
+                            <p>
+                                Dein Warenkorb ist leer. <br>
+                                Such dir ruhig etwas Leckeres aus!
+                            </p>
+                            <img src="./assets/icons/basket.png" alt="Basket picture">
+                        </div>
+
+                        <ul class="basket-list" id="basket-article-list">
+                            <!-- <li class="basket-card">
                             <div class="basket-card-header">
                                 <h3>Name des Gerichts</h3>
                             </div>
@@ -262,43 +267,44 @@
                                 <button class="basket-card-trash-button"><img src="./assets/icons/trashcan.png" alt="Trashcan icon"></button>
                             </div>
                         </li> -->
-                    </ul>
-                </div>
-
-                <div class="basket-order-switch-button-container" id="basket-order-switch-button-section">
-                    <span>Abholung</span>
-                    <label class="basket-order-switch-button">
-                        <input type="checkbox" id="basket-order-delivery-toggle" onchange="toggleDelivery()">
-                        <span class="switch-button-slider switch-button-round"></span>
-                    </label>
-                    <span>Lieferung</span>
-                </div>
-
-                <div class="basket-calculation-container" id="basket-calculation-section">
-                    <div class="basket-calculation-item" id="basket-calculation-subtotal-section">
-                        <span>Zwischensumme</span>
-                        <span id="basket-calculation-subtotal"></span>
+                        </ul>
                     </div>
 
-                    <div class="basket-calculation-item" id="basket-calculation-delivery-cost-section">
-                        <span>Lieferkosten</span>
-                        <span id="basket-calculation-delivery-cost"></span>
+                    <div class="basket-order-switch-button-container" id="basket-order-switch-button-section">
+                        <span>Abholung</span>
+                        <label class="basket-order-switch-button" for="basket-order-delivery-toggle" aria-label="Switch shipping method between pickup and delivery">
+                            <input type="checkbox" id="basket-order-delivery-toggle" onchange="toggleDelivery()">
+                            <span class="switch-button-slider switch-button-round"></span>
+                        </label>
+                        <span>Lieferung</span>
                     </div>
 
-                    <div class="basket-calculation-item basket-calculation-total">
-                        <span>Total</span>
-                        <span id="basket-calculation-total"></span>
+                    <div class="basket-calculation-container" id="basket-calculation-section">
+                        <div class="basket-calculation-item" id="basket-calculation-subtotal-section">
+                            <span>Zwischensumme</span>
+                            <span id="basket-calculation-subtotal"></span>
+                        </div>
+
+                        <div class="basket-calculation-item" id="basket-calculation-delivery-cost-section">
+                            <span>Lieferkosten</span>
+                            <span id="basket-calculation-delivery-cost"></span>
+                        </div>
+
+                        <div class="basket-calculation-item basket-calculation-total">
+                            <span>Total</span>
+                            <span id="basket-calculation-total"></span>
+                        </div>
+                        <button class="basket-order-button" onclick="openDialog()">Bestellen (<span
+                                id="basket-calculation-total-button"></span>)</button>
                     </div>
-                    <button class="basket-order-button" onclick="openDialog()">Bestellen (<span id="basket-calculation-total-button"></span>)</button>
-                </div>
-                
-            </aside>
-        </section>
-        
-        
-        
-        <!-- Vorlage -->
-        <!-- <section class="category-container-NEU">
+
+                </aside>
+            </section>
+
+
+
+            <!-- Vorlage -->
+            <!-- <section class="category-container-NEU">
 
             <div class="orange-bg"></div>
             <div>main</div>
@@ -316,26 +322,23 @@
         <section>
             basket
         </section> -->
-    </div>
+        </div>
 
 
-    <!-- Dialog after order -->
-    <section>
-        <dialog class="basket-ordered-container" id="basket-ordered-dialog-section">
-            <div class="basket-ordered-close-button">
-                <button onclick="closeDialog()">X</button>
-            </div>
-            <div class="basket-ordered-text">
-                <img src="./assets/icons/delivery-ordered.png" alt="Delivery ordered picture">
-                <h3>Bestellung bestätigt!</h3>
-                <p>Dein Essen ist unterwegs!</p>
-            </div>
-            <p class="basket-ordered-close-info">(Dieses Fenster schließt automatisch in 5 Sekunden)</p>
-        </dialog>
-    </section>
-
-
-
+        <!-- Dialog after order -->
+        <section>
+            <dialog class="basket-ordered-container" id="basket-ordered-dialog-section" role="status" aria-labelledby="dialog-title">
+                <div class="basket-ordered-close-button">
+                    <button onclick="closeDialog()">X</button>
+                </div>
+                <div class="basket-ordered-text">
+                    <img src="./assets/icons/delivery-ordered.png" alt="">
+                    <h3 id="dialog-title">Bestellung bestätigt!</h3>
+                    <p>Dein Essen ist unterwegs!</p>
+                </div>
+                <p class="basket-ordered-close-info">(Dieses Fenster schließt automatisch in 5 Sekunden)</p>
+            </dialog>
+        </section>
 
 
 
@@ -362,8 +365,11 @@
 
 
 
-    <!-- Main content ALT -->
-    <!-- <main class="main-layout container">
+
+
+
+        <!-- Main content ALT -->
+        <!-- <main class="main-layout container">
         <div>
             <section>
                 <div class="category-bar-fullsize">
@@ -441,13 +447,14 @@
     </main> -->
 
 
-
+    </main>
     <!-- Footer -->
     <footer>
         <section class="footer-section">
             <p>&#169; 2026 Timo's Restaurant</p>
-            <p>Imprint</p>
-            <p>Cookie Preferences</p>
+            <a href="#" onclick="openImpressum(); return false;" aria-haspopup="dialog">Impressum</a>
+            <a href="#" onclick="openCookiePreferences(); return false;" aria-haspopup="dialog">Cookie-Einstellungen</a>
+            <a href="#top">Zurück nach oben</a>
         </section>
     </footer>
 
@@ -459,10 +466,12 @@
             <button><img src="./assets/icons/mobile-profile.png" alt="Mobile profile button icon"></button>
             <button><img src="./assets/icons/mobile-orders.png" alt="Mobile order button icon"></button>
             <button>
-            <div class="mobile-basket-button-icon-wrapper">
-                <span><img src="./assets/icons/mobile-shopping_cart.png" alt="Mobile shopping cart button icon" id="mobile-open-basket-button"></span>
-                <span class="basket-badge" id="basket-badge-count"></span>
-            </div></button>
+                <div class="mobile-basket-button-icon-wrapper">
+                    <span><img src="./assets/icons/mobile-shopping_cart.png" alt="Mobile shopping cart button icon"
+                            id="mobile-open-basket-button"></span>
+                    <span class="basket-badge" id="basket-badge-count"></span>
+                </div>
+            </button>
         </nav>
     </section>
 
@@ -528,7 +537,7 @@
 
 
 
-<!-- Alter Code vom 04.05.2026 / 05.05.2026 -->
+    <!-- Alter Code vom 04.05.2026 / 05.05.2026 -->
     <!-- <div class="main-wrapper">
     <main>
         <section>
@@ -637,12 +646,13 @@
             <p>Cookie Preferences</p>
         </section>
     </footer> -->
-    
 
-    
+
+
     <!-- JavaScript files -->
-     <script src="./scripts/database.js"></script>
-     <script src="./scripts/template.js"></script>
-     <script src="./script.js"></script>
+    <script src="./scripts/database.js"></script>
+    <script src="./scripts/template.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

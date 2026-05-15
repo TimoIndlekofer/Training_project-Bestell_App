@@ -95,7 +95,8 @@
     /* background: #27ae60; */
     background: rgba(231, 108, 31, 1);
     font-weight: 500;
-    color: white;
+    /* color: white; */
+    color: black;
     
     border: none;
     border-radius: 8px;

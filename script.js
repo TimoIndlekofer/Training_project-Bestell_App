@@ -369,6 +369,16 @@ function updateBasketBadge() {
 }
 
 
+function openImpressum() {
+    alert("Hinweis: Das ist ein reines Übungsprojekt zu Lernzwecken. Die Seite wird nicht öffentlich hochgeladen, weshalb kein rechtliches Impressum hinterlegt ist.");
+}
+
+
+function openCookiePreferences() {
+    alert("Hinweis: Das ist ein reines Übungsprojekt zu Lernzwecken. Auf dieser Webseite werden keine echten Cookies oder Tracking-Daten gesammelt.");
+}
+
+
 function saveDataToLocalStorage() {
     let data = JSON.stringify(basket);
 
