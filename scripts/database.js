@@ -94,19 +94,19 @@ let menu = [
     },
     {
         "id": 203,
+        "image": "./assets/img/menu/cucumber-salad.jpg",
+        "name": "Gurkensalat",
+        "category": "Vorspeise",
+        "price": 3.80,
+        "description": "Feine Gurkenscheiben in einem klassischen Dill-Essig-Dressing" 
+    },
+    {
+        "id": 204,
         "image": "./assets/img/menu/spring_rolls.jpg",
         "name": "Frühlingsrollen",
         "category": "Vorspeise",
         "price": 4.50,
         "description": "Vegetarisch gefüllt mit süß-sauer Sauce (3 Stück)" 
-    },
-    {
-        "id": 204,
-        "image": "./assets/img/menu/placeholder_cheese_sticks.png",
-        "name": "Käse Sticks",
-        "category": "Vorspeise",
-        "price": 7.50,
-        "description": "Käse Sticks mit Chili-Dip (5 Stück)" 
     },
     {
         "id": 205,
@@ -206,7 +206,7 @@ let menu = [
     },
     {
         "id": 502,
-        "image": "./assets/img/menu/placeholder_potatos.png",
+        "image": "./assets/img/menu/potatos.jpg",
         "name": "Kleine Kartoffeln",
         "category": "Beilagen",
         "price": 4.50,
@@ -214,27 +214,27 @@ let menu = [
     },
     {
         "id": 503,
+        "image": "./assets/img/menu/backed_potato.jpg",
+        "name": "Überbackene Kartoffeln",
+        "category": "Beilagen",
+        "price": 4.80,
+        "description": "Überbackene Kartoffeln mit Käse" 
+    },
+    {
+        "id": 504,
+        "image": "./assets/img/menu/noodle.jpg",
+        "name": "Portion Nudeln",
+        "category": "Beilagen",
+        "price": 3.80,
+        "description": "Gekochte Nudeln ohne Soße" 
+    },
+    {
+        "id": 505,
         "image": "./assets/img/menu/rice.jpg",
         "name": "Portion Reis",
         "category": "Beilagen",
         "price": 3.50,
         "description": "Locker gedämpfter Reis" 
-    },
-    {
-        "id": 504,
-        "image": "./assets/img/menu/placeholder_pizza_bread.png",
-        "name": "Pizzabrot",
-        "category": "Beilagen",
-        "price": 5.00,
-        "description": "Pizzabrot mit Olivenöl und Oregano (5 Stück)" 
-    },
-    {
-        "id": 505,
-        "image": "./assets/img/menu/cucumber-salad.jpg",
-        "name": "Gurkensalat",
-        "category": "Beilagen",
-        "price": 3.80,
-        "description": "Feine Gurkenscheiben in einem klassischen Dill-Essig-Dressing" 
     }
 ]
 

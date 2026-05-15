@@ -23,14 +23,9 @@
 }
 
 
-.menu-card-image {
-    display: flex;
-    align-items: center;
-}
-
-
 .menu-card-image img {
-    object-fit: fill;
+    object-fit: cover;
+    object-position: center;
 
     border-radius: 12px;
 
@@ -167,6 +162,12 @@
         width: 335px;
         height: auto;
         min-height: 260px;
+    }
+
+
+    .menu-card-image {
+        display: flex;
+        align-items: center;
     }
 
 
