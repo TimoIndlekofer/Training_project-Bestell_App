@@ -6,7 +6,7 @@
 <h2>Important notes</h2>
 <ul>
 <li>Project design by: Developer Akademie</li>
-<li>Project pictures by: Developer Akademie and Pixabay</li>
+<li>Project pictures by: Developer Akademie and Pixabay (pictures from Pixabay are licensed for free use)</li>
 <li>Project graphics by: Developer Akademie</li>
 <br>
 <li>Coded by: Timo Indlekofer (for training)</li>
