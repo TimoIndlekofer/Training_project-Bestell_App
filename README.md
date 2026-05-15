@@ -1,5 +1,4 @@
 <h1>Trainig project - Bestell App</h1>
-<br>
 <p>This is a training project "Bestell App" of my training program at Developer Akademie.
 <br>
 (URL: <a href="https://developerakademie.com">https://developerakademie.com/</a>)</p>
