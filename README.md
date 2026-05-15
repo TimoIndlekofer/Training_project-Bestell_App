@@ -15,4 +15,4 @@
 </ul>
 <br>
 <h2>Important remarks</h2>
-<p>This project is still in work and not finished yet!</p>
+<p>This website is not commercial and does not involve any actual ordering.</p>
