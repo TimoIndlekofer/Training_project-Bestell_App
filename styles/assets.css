@@ -67,6 +67,31 @@
 }
 
 
+.menu-card-description::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+.menu-card-description::-webkit-scrollbar-track {
+    background: rgba(54, 53, 52, 1);
+
+    border-radius: 10px;
+}
+
+
+.menu-card-description::-webkit-scrollbar-thumb {
+    background: rgba(231, 195, 173, 1);
+    
+    border-radius: 10px;
+    border: 2px solid rgba(54, 53, 52, 1);
+}
+
+
+.menu-card-description::-webkit-scrollbar-thumb:hover {
+    background: rgba(231, 108, 31, 1);
+}
+
+
 .add-button-container {
     display: flex;
     justify-content: flex-end;
