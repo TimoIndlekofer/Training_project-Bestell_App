@@ -5,32 +5,32 @@ let category = [
     {
         "categoryID": "category-drinks",
         "image": "./assets/img/category_drinks.jpg",
-        "name": "Getränke",
-        "menuID": "menu-drinks"
+        "menuID": "menu-drinks",
+        "name": "Getränke"
     },
     {
         "categoryID": "category-appetizers",
         "image": "./assets/img/category_appetizers.jpg",
-        "name": "Vorspeisen",
-        "menuID": "menu-appetizers"
+        "menuID": "menu-appetizers",
+        "name": "Vorspeisen"
     },
     {
         "categoryID": "category-main-dishes",    
-        "image": "./assets/img/category_main_dishes.png",            
-        "name": "Hauptspeisen",
-        "menuID": "menu-main-dishes"
+        "image": "./assets/img/category_main_dishes.png",
+        "menuID": "menu-main-dishes",
+        "name": "Hauptspeisen"
     },
     {
         "categoryID": "category-desserts",
         "image": "./assets/img/category_desserts.jpg",
-        "name": "Nachspeisen",
-        "menuID": "menu-desserts"
+        "menuID": "menu-desserts",
+        "name": "Nachspeisen"
     },
     {
         "categoryID": "category-side-dishes",
         "image": "./assets/img/category_side_dishes.jpg",
-        "name": "Beilagen",
-        "menuID": "menu-side-dishes"
+        "menuID": "menu-side-dishes",
+        "name": "Beilagen"
     }
 ]
 
@@ -80,7 +80,7 @@ let menu = [
         "id": 201,
         "image": "./assets/img/menu/green_salad.jpg",
         "name": "Grüner Salat",
-        "category": "Vorspeise",
+        "category": "Vorspeisen",
         "price": 3.50,
         "description": "Grüner Blattsalat in Essig-Öl-Dressing" 
     },
@@ -88,7 +88,7 @@ let menu = [
         "id": 202,
         "image": "./assets/img/menu/mixed_salad.jpg",
         "name": "Gemischter Salat",
-        "category": "Vorspeise",
+        "category": "Vorspeisen",
         "price": 5.50,
         "description": "Gemischter Blattsalat mit Karotten, Mais, Kraut und Kartoffelsalat in Essig-Öl-Dressing" 
     },
@@ -96,7 +96,7 @@ let menu = [
         "id": 203,
         "image": "./assets/img/menu/cucumber-salad.jpg",
         "name": "Gurkensalat",
-        "category": "Vorspeise",
+        "category": "Vorspeisen",
         "price": 3.80,
         "description": "Feine Gurkenscheiben in einem klassischen Dill-Essig-Dressing" 
     },
@@ -104,7 +104,7 @@ let menu = [
         "id": 204,
         "image": "./assets/img/menu/spring_rolls.jpg",
         "name": "Frühlingsrollen",
-        "category": "Vorspeise",
+        "category": "Vorspeisen",
         "price": 4.50,
         "description": "Vegetarisch gefüllt mit süß-sauer Sauce (3 Stück)" 
     },
@@ -112,7 +112,7 @@ let menu = [
         "id": 205,
         "image": "./assets/img/menu/quiches.jpg",
         "name": "Mini-Quiches",
-        "category": "Vorspeise",
+        "category": "Vorspeisen",
         "price": 8.50,
         "description": "Kleine, vegetarische Törtchen (3 Stück)" 
     },
@@ -120,7 +120,7 @@ let menu = [
         "id": 301,
         "image": "./assets/img/menu/hamburger.jpg",
         "name": "Hamburger",
-        "category": "Hauptspeise",
+        "category": "Hauptspeisen",
         "price": 12.50,
         "description": "Burgerbans, 200g Rindfleisch, Salat, Gewürzgurkenscheiben, Tomatenscheiben mit Burgersauce" 
     },
@@ -128,7 +128,7 @@ let menu = [
         "id": 302,
         "image": "./assets/img/menu/cheeseburger.png",
         "name": "Cheeseburger",
-        "category": "Hauptspeise",
+        "category": "Hauptspeisen",
         "price": 14.50,
         "description": "Burgerbans mit Sesamkörner, 200g Rindfleisch, 2 Scheiben Cheddar, Salat, Gewürzgurkenscheiben, Tomatenscheiben mit Burgersauce"
     },
@@ -136,7 +136,7 @@ let menu = [
         "id": 303,
         "image": "./assets/img/menu/pizza.jpg",
         "name": "Pizza",
-        "category": "Hauptspeise",
+        "category": "Hauptspeisen",
         "price": 12.00,
         "description": "Überraschungspizza nach Art des Hauses (30 cm)" 
     },
@@ -144,7 +144,7 @@ let menu = [
         "id": 304,
         "image": "./assets/img/menu/pommes_schnitzel.jpg",
         "name": "Schnitzel mit Pommes",
-        "category": "Hauptspeise",
+        "category": "Hauptspeisen",
         "price": 18.50,
         "description": "Rindfleischschnitzel mit Pommes, Reis oder Salat" 
     },
@@ -152,7 +152,7 @@ let menu = [
         "id": 305,
         "image": "./assets/img/menu/curry.jpg",
         "name": "Vegetarisches Curry",
-        "category": "Hauptspeise",
+        "category": "Hauptspeisen",
         "price": 12.50,
         "description": "Saisonnales Gemüse in Curry-Sauce mit Reis" 
     },
@@ -160,7 +160,7 @@ let menu = [
         "id": 401,
         "image": "./assets/img/menu/ice.jpg",
         "name": "Eisbecher",
-        "category": "Nachspeise",
+        "category": "Nachspeisen",
         "price": 7.00,
         "description": "Vanilleeis mit Himbeeren (3 Kugeln)" 
     },
@@ -168,7 +168,7 @@ let menu = [
         "id": 402,
         "image": "./assets/img/menu/yoghurt.jpg",
         "name": "Joghurtbecher",
-        "category": "Nachspeise",
+        "category": "Nachspeisen",
         "price": 5.00,
         "description": "Mit cremigen Waldhonig und Walnüssen" 
     },
@@ -176,7 +176,7 @@ let menu = [
         "id": 403,
         "image": "./assets/img/menu/waffles.jpg",
         "name": "Frische Waffeln",
-        "category": "Nachspeise",
+        "category": "Nachspeisen",
         "price": 4.80,
         "description": "Vanilleeis mit Himbeeren (3 Kugeln)" 
     },
@@ -184,7 +184,7 @@ let menu = [
         "id": 404,
         "image": "./assets/img/menu/cake.jpg",
         "name": "Kuchen",
-        "category": "Nachspeise",
+        "category": "Nachspeisen",
         "price": 5.30,
         "description": "Frischer Erdbeer- oder Kirschkuchen (1 Stück)" 
     },
@@ -192,7 +192,7 @@ let menu = [
         "id": 405,
         "image": "./assets/img/menu/backed_banana.jpg",
         "name": "Gebackene Banane",
-        "category": "Nachspeise",
+        "category": "Nachspeisen",
         "price": 5.50,
         "description": "In Teigmantel ausgebackene, mit Honig und Sesam verfeinerte Bananenstücke (7 Stücke)" 
     },
