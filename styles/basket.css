@@ -22,6 +22,7 @@
     height: 700px;
     min-height: 700px;
     padding: 20px;
+    margin-top: 275px;
 }
 
 
@@ -410,6 +411,11 @@ input:checked + .switch-button-slider:before { transform: translateX(26px); }
 }
 
 
+.basket-mobile-no-scrolling {
+    overflow: hidden;
+}
+
+
 
 
 
@@ -451,6 +457,9 @@ input:checked + .switch-button-slider:before { transform: translateX(26px); }
         width: auto;
         height: auto;
         padding: 20px;
+        margin-top: 0;
+
+        overscroll-behavior: contain;
     }
 
 

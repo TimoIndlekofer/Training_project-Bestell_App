@@ -335,11 +335,13 @@ function mobileBasketFunction() {
 
 function openMobileBasket() {
     mobileBasket.classList.add('is-open');
+    document.documentElement.classList.add('basket-mobile-no-scrolling');
 }
 
 
 function closeMobileBasket() {
     mobileBasket.classList.remove('is-open');
+    document.documentElement.classList.remove('basket-mobile-no-scrolling');
 }
 
 
