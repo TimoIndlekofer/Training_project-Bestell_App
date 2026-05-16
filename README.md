@@ -14,4 +14,4 @@
 </ul>
 <br>
 <h2>Important remarks</h2>
-<p>This website is not commercial and does not involve any actual ordering.</p>
+<p>This website will not be published, is not commercial and does not involve any actual ordering.</p>
