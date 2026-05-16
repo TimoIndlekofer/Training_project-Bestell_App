@@ -1,5 +1,4 @@
 <h1>Trainig project - Bestell App</h1>
-<br>
 <p>This is a training project "Bestell App" of my training program at Developer Akademie.
 <br>
 (URL: <a href="https://developerakademie.com">https://developerakademie.com/</a>)</p>
@@ -7,7 +6,7 @@
 <h2>Important notes</h2>
 <ul>
 <li>Project design by: Developer Akademie</li>
-<li>Project pictures by: Developer Akademie</li>
+<li>Project pictures by: Developer Akademie and Pixabay (pictures from Pixabay are licensed for free use)</li>
 <li>Project graphics by: Developer Akademie</li>
 <br>
 <li>Coded by: Timo Indlekofer (for training)</li>
@@ -15,4 +14,4 @@
 </ul>
 <br>
 <h2>Important remarks</h2>
-<p>This project is still in work and not finished yet!</p>
+<p>This website is not commercial and does not involve any actual ordering.</p>
